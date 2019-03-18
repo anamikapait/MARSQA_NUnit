@@ -40,13 +40,13 @@ namespace MarsFramework
             }
 
             [Test]
-            public void ManageListingsViewDetailsTest()
+            public void ManageListingsEditDetailsTest()
             {
                 // Creates a toggle for the given test, adds all log events under it    
-                test = extent.StartTest("View Listing in Manage Listings");
+                test = extent.StartTest("Edit Listing in Manage Listings");
                 // Create an class and object to call the method
                 ManageListings obj = new ManageListings();
-                obj.ManageListingsViewDetailsSteps();
+                obj.ManageListingsEditListingSteps();
 
             }
 
@@ -58,6 +58,17 @@ namespace MarsFramework
                 // Create an class and object to call the method
                 ManageListings obj = new ManageListings();
                 obj.ManageListingsDeleteListingSteps();
+
+            }
+
+            [Test]
+            public void ManageListingsViewDetailsTest()
+            {
+                // Creates a toggle for the given test, adds all log events under it    
+                test = extent.StartTest("View Listing in Manage Listings");
+                // Create an class and object to call the method
+                ManageListings obj = new ManageListings();
+                obj.ManageListingsViewDetailsSteps();
 
             }
         }
